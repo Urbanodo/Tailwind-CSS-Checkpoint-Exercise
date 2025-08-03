@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- En-tête -->
+    <header class="bg-orange-100 shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-brown-400">Yaovi Urbain DOHOUNGBO</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#accueil" class="text-gray-1000 hover:text-indigo-600 transition">Accueil</a></li>
+                    <li><a href="#competences" class="text-gray-1000 hover:text-indigo-600 transition">Compétences</a></li>
+                    <li><a href="#projets" class="text-gray-1000 hover:text-indigo-600 transition">Projets</a></li>
+                    <li><a href="#contact" class="text-gray-1000 hover:text-indigo-600 transition">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-gray-800">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Section Héros -->
+    <section id="accueil" class="relative bg-green-600 text-white py-20">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-6 relative z-10 flex flex-col items-center text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Bonjour, je suis Yaovi Urbain DOHOUNGBO</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl">Je suis développeur et j'adore créer des sites web beaux et fonctionnels. Je crois en la conception d'expériences non seulement esthétiques, mais aussi fonctionnelles.</p>
+            <a href="#contact" class="bg-white text-indigo-700 px-8 py-3 rounded-lg font-semibold hover:bg--100 transition duration-300">Contactez-moi</a>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Mes Compétences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-green-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fab fa-html5 text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">HTML/CSS</h3>
+                    <p class="text-gray-600">Maîtrise des standards web et des techniques modernes de mise en page.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fab fa-js text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+                    <p class="text-gray-600">Développement d'applications interactives avec les frameworks modernes.</p>
+                </div>
+                <div class="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fab fa-react text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">React</h3>
+                    <p class="text-gray-600">Création d'interfaces utilisateur dynamiques et performantes.</p>
+                </div>
+                <div class="bg-orange-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-server text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Backend</h3>
+                    <p class="text-gray-600">Développement d'API et gestion de bases de données.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Mes Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 -->
+                <div class="bg-green-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://katosconsulting.com" alt="Projet 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">site d'une entreprise immobilier</h3>
+                        <p class="text-gray-600 mb-4">Plateforme spécialisée dans la vente  de terrain.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Voir le projet →</a>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="bg-blue-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://katosconstruction.com" alt="Projet 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">site d'une entreprise de construction</h3>
+                        <p class="text-gray-600 mb-4">Plateforme spécialisée dans la construction de appartements F2 F3 F4 F5 F6.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Voir le projet →</a>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="bg-orange-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://www.facebook.com/search/top/?q=katos%20consulting" alt="Projet 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Réseau Social</h3>
+                        <p class="text-gray-600 mb-4">Plateforme facebook pour la publicité.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Voir le projet →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-16 bg-indigo-700 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Contactez-moi</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block mb-2 font-medium">Nom</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-indigo-600 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-white placeholder-indigo-300" placeholder="Votre nom">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 font-medium">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-indigo-600 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-white placeholder-indigo-300" placeholder="Votre email">
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 font-medium">Message</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-2 rounded-lg bg-indigo-600 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-white placeholder-indigo-300" placeholder="Votre message"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-white text-indigo-700 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-600 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 Yaovi Urbain DOHOUNGBO. Tous droits réservés.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
